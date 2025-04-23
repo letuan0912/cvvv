@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 210mm; /* Chiều rộng A4 */
+    margin: 0 auto;
+    padding: 10mm;
+    box-sizing: border-box;
+}
+
+.resume {
+    max-width: 800px; 
+    margin: 0 auto; 
+    background-color: white;
+    border: 1px solid #909ceb;
+    padding: 30px;
+}
+
+.header {
+    background-color: #fbf5f5;
+    padding: 10px; 
+    display: flex;
+    align-items: center; 
+}
+
+.profile-info h1 {
+    margin: 10px 0 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.profile-img img {
+    width: 100x; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    border: 10px solid #eee; 
+}
+
+.section {
+    margin: 30px 0 20px;
+}
+
+.section h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #33609c;
+    padding-bottom: 8px;
+    font-size: 16px;
+    color: #33609c;
+}
+
+.content {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.education {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.edu-period {
+    width: 100px;
+}
+
+.edu-details {
+    flex-grow: 1;
+}
+
+.edu-details h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.section p {
+    text-align: justify;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.exp-header {
+    margin-bottom: 8px;
+}
+
+.exp-period {
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.exp-company {
+    font-weight: bold;
+}
+
+ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+.nav-button {
+    padding: 8px 16px;
+    background-color: #3e77c1;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 4px; /* khoảng cách trái-phải */
+}
+.pdf-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px; /* tuỳ chọn, tạo khoảng cách với phần trên */
+}
+
+.pdf-controls button {
+    padding: 8px 4px; /* sửa lỗi "8p" thành "8px" */
+    background-color: #29486e;
+    color: rgb(245, 238, 238);
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+
+.pdf-controls button:hover {
+    background-color: #2a4f80;
+}
+
+@media (max-width: 600px) {
+    .header {
+      display: flex;
+      flex-direction: column; /* Chỉnh từ row sang column cho thiết bị nhỏ */
+      align-items: flex-start;
+      gap: 10px; /* Thêm khoảng cách giữa các phần tử nếu cần */
+    }
+  
+    .resume {
+      padding: 10px 15px; /* Tăng khả năng hiển thị tốt hơn trên mobile */
+    }
+  
+    .section h2 {
+      font-size: 16px; /* Font hơi to hơn để dễ đọc */
+      margin-bottom: 8px;
+    }
+  
+    .content,
+    .profile-info p {
+      font-size: 14px;
+      line-height: 1.5; /* Dễ đọc hơn trên màn hình nhỏ */
+    }
+  }
+  
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 210mm;
+        min-height: 297mm;
+        padding: 10mm;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .resume {
+        border: none;
+        padding: 0; 
+        margin: 0;
+    }
+
+    .pdf-controls {
+        display: none !important; /* Ẩn nút khi in PDF */
+    }
+    
+}

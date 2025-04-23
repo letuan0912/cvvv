@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 800px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .contact h1 {
+    text-align: center;
+    color: #33609c;
+    font-size: 2.5rem;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    color: #33609c;
+    border-bottom: 2px solid #33609c;
+    padding-bottom: 5px;
+    font-size: 1.75rem;
+  }
+  
+  .section p, .section ul {
+    color: #666666;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  .section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px; /* Thêm padding để thụt lề phù hợp */
+  }
+  
+  .section ul li {
+    word-break: break-all; /* Đảm bảo email dài sẽ tự động xuống dòng */
+    margin-bottom: 8px; /* Tăng khoảng cách giữa các mục */
+  }
+  
+  #backToCVButton {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #33609c;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #backToCVButton:hover {
+    background-color: #274a7a;
+  }
+  
+  /* Media Queries cho các thiết bị nhỏ hơn */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      margin: 20px auto;
+      padding: 10px;
+    }
+  
+    .contact h1 {
+      font-size: 2rem;
+    }
+  
+    .section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .section p, .section ul {
+      font-size: 0.9rem;
+    }
+  
+    .section ul {
+      margin-left: 15px;
+      padding-left: 15px;
+    }
+  
+    #backToCVButton {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 98%;
+      margin: 10px auto;
+      padding: 8px;
+    }
+  
+    .contact h1 {
+      font-size: 1.5rem;
+    }
+  
+    .section h2 {
+      font-size: 1.25rem;
+    }
+  
+    .section p, .section ul {
+      font-size: 0.85rem;
+    }
+  
+    .section ul {
+      margin-left: 10px;
+      padding-left: 10px;
+    }
+  
+    .section ul li {
+      word-break: break-all; /* Đảm bảo xuống dòng trên màn hình nhỏ */
+      margin-bottom: 6px;
+    }
+  
+    #backToCVButton {
+      font-size: 0.85rem;
+      padding: 6px 12px;
+    }
+  }

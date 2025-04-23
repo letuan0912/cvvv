@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 210mm; /* A4 width */
+    margin: 20px auto;
+    padding: 10mm;
+    box-sizing: border-box;
+}
+
+.about-me {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #909ceb;
+    padding: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-me h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 20px;
+    color: #33609c;
+}
+
+.profile-info {
+    margin-bottom: 30px;
+}
+
+.profile-info h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #33609c;
+    padding-bottom: 8px;
+    font-size: 16px;
+    color: #33609c;
+    margin-bottom: 15px;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.section {
+    margin: 30px 0;
+}
+
+.section h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #33609c;
+    padding-bottom: 8px;
+    font-size: 16px;
+    color: #33609c;
+}
+
+.section p {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.education {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.edu-period {
+    width: 100px;
+    font-size: 14px;
+}
+
+.edu-details {
+    flex-grow: 1;
+}
+
+.edu-details h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.edu-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 5mm;
+    }
+
+    .about-me {
+        padding: 15px;
+    }
+
+    .about-me h1 {
+        font-size: 20px;
+    }
+
+    .profile-info h2,
+    .section h2 {
+        font-size: 14px;
+    }
+
+    .profile-info p,
+    .section p,
+    .edu-period,
+    .edu-details h4,
+    .edu-details p {
+        font-size: 12px;
+    }
+
+    .edu-period {
+        width: 80px;
+    }
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 210mm;
+        min-height: 297mm;
+        padding: 10mm;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .about-me {
+        border: none;
+        padding: 0;
+        margin: 0;
+        box-shadow: none;
+    }
+}
